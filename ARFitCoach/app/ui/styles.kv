@@ -1,0 +1,41 @@
+#:import hex kivy.utils.get_color_from_hex
+#:import GradientBox ui.components.gradient_box.GradientBox
+#:import LottieWidget ui.components.lottie_widget.LottieWidget
+
+<BaseScreen>:
+    canvas.before:
+        Color:
+            rgba: hex('#0F172A')  # Dark blue background
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<WorkoutScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+
+        Image:
+            id: ar_camera
+            size_hint: (1, 0.7)
+
+        BoxLayout:
+            size_hint: (1, 0.1)
+            spacing: 10
+
+            HoverButton:
+                text: 'START'
+                on_press: root.start_workout()
+
+            HoverButton:
+                text: 'PREMIUM'
+                background_color: hex('#F59E0B')
+                on_press: root.manager.current = 'paywall'
+
+        LottieWidget:
+            id: success_animation
+            size_hint: (0.3, 0.3)
+            pos_hint: {'center_x': 0.5}
+            source: 'app/assets/lottie/success.json'
+            opacity: 0

@@ -1,0 +1,9 @@
+kivy==2.3.0
+kivymd==1.1.1
+opencv-python==4.9.0.80
+mediapipe==0.10.9
+firebase-admin==6.2.0
+python-dotenv==1.0.0
+requests==2.31.0
+rlottie-python==0.1.2
+debugpy==1.8.1

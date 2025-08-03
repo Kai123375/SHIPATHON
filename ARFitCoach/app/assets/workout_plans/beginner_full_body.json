@@ -1,0 +1,19 @@
+{
+  "plan_id": "beginner_01",
+  "name": "Beginner Full Body",
+  "exercises": [
+    {
+      "name": "Squats",
+      "sets": 3,
+      "reps": 10,
+      "form_rules": {
+        "min_hip_knee_angle": 140,
+        "max_hip_knee_angle": 170,
+        "feedback": {
+          "too_shallow": "Lower your hips!",
+          "too_deep": "Raise slightly!"
+        }
+      }
+    }
+  ]
+}

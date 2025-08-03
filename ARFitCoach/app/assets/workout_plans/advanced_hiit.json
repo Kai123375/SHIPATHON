@@ -1,0 +1,37 @@
+{
+  "plan_id": "advanced_01",
+  "name": "Elite HIIT Challenge",
+  "difficulty": 5,
+  "duration_minutes": 20,
+  "exercises": [
+    {
+      "name": "Burpee to Jump",
+      "sets": 4,
+      "reps": 12,
+      "rest_seconds": 30,
+      "form_rules": {
+        "phases": {
+          "squat": {"min_hip_angle": 120},
+          "plank": {"max_back_arch": 10},
+          "jump": {"min_height": 0.3}
+        },
+        "feedback": {
+          "squat_too_shallow": "Get lower in the squat!",
+          "plank_sagging": "Engage your core!",
+          "weak_jump": "Explode upwards harder!"
+        }
+      }
+    },
+    {
+      "name": "Mountain Climbers",
+      "duration_seconds": 45,
+      "form_rules": {
+        "min_cadence": 2,  
+        "feedback": {
+          "slow_pace": "Increase your speed!",
+          "hip_high": "Keep hips level!"
+        }
+      }
+    }
+  ]
+}
